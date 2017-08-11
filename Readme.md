@@ -53,22 +53,3 @@ Written with Python 3.0
 ## License
 
 This project is free for public use. 
-
-
-Features: 
-- Be able to schedule when a text is sent
-- Be able to select text sending frequency and times
-- Be able to input multiple numbers for a text
-- Be able to select randomly from a list of messages
-- Be able to turn on or turn off service
-
-
-Implementation Ideas: 
-
-1) Use an excel spreadsheet to input names and numbers 
-	- Next iteration: you can select from contacts
-2) Use an excel spreadsheet to calculate set times and dates based on user preferences
-
-3) Use  
-
-4) Run sendTxt.applescript
