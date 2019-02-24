@@ -18,7 +18,9 @@ This script allows you to set up random texts to one person or preset scheduled 
 
 ### How To Use
 
-* Running the .py file will open the textScheduler.xlsm file. Click “ok” to enable macros
+* Navigate to the project folder via commandline and run "pip install -r requirements.txt", this will install the proper crontab module. 
+
+* Enter "python textScheduler.py" to run the program, this will open the textScheduler.xlsm file. Click “ok” to enable macros
 
 * The Unique Tagname field is used to identify the group of scheduled texts, and to allow for future deletion or modification of all tasks with a similar Tagname 
 
@@ -27,7 +29,7 @@ This script allows you to set up random texts to one person or preset scheduled 
 	* Messages will always be sent within the time interval specified
 	* The full Date Interval will be split evenly into “n” smaller intervals, where “n” equals the number of messages to send. A message will be sent at a random date within a given smaller interval. 
 	* The number of messages per week determines the frequency of messages. This can be a fractional number 
-	* The messages will be randomly selected from the message list
+	* The messages will be randomly selected (with replacement) from the message list
 	* Note that messages will not be sent to the user on weekends
 	 
 * If you want to set up messages to multiple users, fill out the Multi_person tab
@@ -36,7 +38,7 @@ This script allows you to set up random texts to one person or preset scheduled 
 
 * Click Generate, the results will be found under the Autogen_Results tab, and in the separate textSchedule.csv file that will be created/updated in the folder. 
 
-* Once you have generated the file, return to the python console and type "y" without the quotes, this will load each scheduled job onto your compputer's crontab. All crontab jobs will be displayed on the console afterwards. 
+* Once you have generated the file, return to the python console and type "y" (without the quotes), this will load each scheduled job onto your compputer's crontab. All crontab jobs will be displayed on the console afterwards. 
 
 * If you would like to remove a selection of jobs, type the job id (the text after the "#" that appears as a comment at the end of a crontab entry) when prompted. Type "e" to exit the program.
 
@@ -48,8 +50,6 @@ This script allows you to set up random texts to one person or preset scheduled 
 
 Tested Operating Systems: Tested on Windows 10 and OSX 10.12.4   
 Written with Python 3.0
-
-
 
 ## Authors
 
