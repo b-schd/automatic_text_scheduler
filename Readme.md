@@ -1,22 +1,15 @@
-# Digital Life Hacks: About this Repository
-
-This repository is dedicated to miscellaneous projects that I’ve created to make life easier. Each folder is a self-contained project. 
-
-The following sections provide descriptions and deployment information for each of the KiCAD utilities included in this repository. 
-
-
-## DLH #1: Automatic Text Scheduler
+# Automatic Text Scheduler
 
 Have you ever wanted to automatically send text messages to your friends on their birthdays? Or maybe you wanted to randomly send check-in messages to your long-distance friends every few weeks just to keep in touch?
 
 This script allows you to set up random texts to one person or preset scheduled texts to multiple friends from your computer. Once set-up, sit back and relax and let the scheduler do the sending at the dates and times you specify!
 
-### System Requirements
+## System Requirements
 * Only compatitble with Mac OS
 * Should be run using Python 3.x, which can be [downloaded here](https://www.python.org/downloads/)
 * Requires the CronTab module for Python, [install instructions here](https://code.tutsplus.com/tutorials/managing-cron-jobs-using-python--cms-28231)
 
-### How To Use
+## How To Use
 
 * Navigate to the project folder via commandline and run "pip install -r requirements.txt", this will install the proper crontab module. 
 
@@ -42,11 +35,11 @@ This script allows you to set up random texts to one person or preset scheduled 
 
 * If you would like to remove a selection of jobs, type the job id (the text after the "#" that appears as a comment at the end of a crontab entry) when prompted. Type "e" to exit the program.
 
-### Notes and Limitations
+## Notes and Limitations
 
 * The jobs that are scheduled to your crontab will only be executed if your computer is running (not sleeping or off). Thus texts will only be sent while you are logged in. 
 
-### Compatibility and Versioning
+## Compatibility and Versioning
 
 Tested Operating Systems: Tested on Windows 10 and OSX 10.12.4   
 Written with Python 3.0
